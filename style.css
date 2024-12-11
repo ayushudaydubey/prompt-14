@@ -1,0 +1,210 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+font-weight: 300;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+.page{
+  height: 100vh;
+  width: 100vw;
+  
+
+  background: linear-gradient(to right, #00244b, #8abdff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+nav{
+  height: 10vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vw 3vw;
+  align-items: center;
+}
+.n-left{
+  display: flex;
+  align-items: center;
+  gap: 8vw;
+width: 60vw;
+  opacity: 0;
+    animation: anime forwards;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+
+  padding-top: 10px;
+}
+
+.logo h1{
+  font-size: 50px;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+
+}
+.links h3{
+  font-size: 40px;
+  margin-top: 2%;
+  font-weight: 300;
+cursor: pointer;
+}
+.links h3:hover{
+  text-decoration: underline 2px solid white;
+}
+.links{
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.n-right button{
+  padding: 10px 30px ;
+  border: none;
+  border-radius: 10px;
+  font-size: 35px;
+  font-weight: 300;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+      animation: anime2 forwards;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+opacity: 0;
+}
+.hero{
+  height: 90vh;
+  width: 100vw;
+ 
+  display: flex;
+  padding: 1vw 3vw;
+}
+.left{
+  width: 50%;
+ 
+  height: 100%;
+  padding:4vw 0vw;
+  opacity: 0;
+    animation: anime forwards;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+.left h1{
+  font-size: 95px;
+  line-height: 1.5;
+
+  font-weight: 600;
+
+
+
+
+}
+.left p{
+  font-size: 40px ;
+  letter-spacing: 2px;
+  padding-top: 2vw;
+  
+}
+.l-btn{
+  display: flex;
+  gap: 3vw;
+  padding-top: 5vw;
+}
+button {
+  padding: 15px 40px ;
+  border: none;
+  border-radius: 10px;
+  background-color: transparent;
+  font-size: 35px ;
+  border: 1px solid rgb(255, 255, 255);
+  text-transform: capitalize;
+  transition: 0.3s ease all;
+  cursor: pointer;
+}
+button:hover{
+  padding: 15px 50px;
+background-color: #00244b;
+}
+.right{
+  height: 100%;
+  width: 50%;
+  position: relative;
+      animation: anime2 forwards;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-delay: 4s;
+opacity: 0;
+
+}
+ .right img{
+  box-shadow: 10px 10px 25px black;
+}
+.right .img1{
+  width: 60%;
+  height: 60%;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-left: 40%;
+  padding-bottom:1vw;
+}
+.img2{
+  height: 50%;
+  width: 55%;
+  object-fit: cover;
+  position: absolute;
+  bottom: 0%;
+  right: 55%;
+  border-radius: 20px;
+}
+.img3{
+  object-fit: cover;
+  height: 40%;
+  width: 50%;
+  position: absolute;
+  bottom: 0%;
+  z-index: 10;
+  border-radius: 20px;
+  right: 2%;
+}
+.img4{
+  object-fit: cover;
+  height: 50%;
+  width: 30%;
+  position: absolute;
+  bottom: 52%;
+  z-index: 10;
+  border-radius: 20px;
+  right: 62%;
+}
+@keyframes anime {
+
+  from{
+    opacity: 0;
+    transform: translateX(-10%)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes anime2 {
+
+  from{
+    opacity: 0;
+    transform: translateX(10px)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
